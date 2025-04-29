@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>TinaMcpServer</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The core MCP SDK -->
+    <PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.11" /> 
+    <!-- For HostBuilder, Configuration, Logging, DI -->
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <!-- For reading appsettings.json -->
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <!-- For YAML parsing -->
+    <PackageReference Include="YamlDotNet" Version="15.1.2" /> 
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Make sure appsettings.json is copied to output -->
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project> 

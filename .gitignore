@@ -1,0 +1,66 @@
+# C# and Rider specific
+[Bb]in/
+[Oo]bj/
+
+# Rider
+.idea/
+*.user
+*.suo
+
+# Visual Studio
+.vs/
+*.csproj.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+Build/
+bld/
+[Bb]in/
+[Oo]bj/
+Log/
+log/
+
+# Files built by Visual Studio
+_UpgradeReport_Files/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if you don't want to check in regenerated NuGet packages config file
+#packages.config
+# NuGet v3's project.json file conflicts with Json.NET project.json
+project.json
+project.lock.json
+
+# Microsoft Azure Service Fabric specific files
+ApplicationParameters/
+Cloud.xml
+Local.xml
+Script/
+*.sfproj.user
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc
+*.DS_Store
+*.swp
+
+# Publish output
+publish/ 
