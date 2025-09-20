@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/* Custom styles for the cleaning company */
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-gray-800 mt-6 mb-3;
+}
+
+.prose p {
+  @apply text-gray-600 leading-relaxed mb-4;
+}
+
+.prose ul {
+  @apply space-y-2;
+}
+
+.prose li {
+  @apply text-gray-600;
+}
+
+.prose strong {
+  @apply text-gray-900 font-semibold;
+}
